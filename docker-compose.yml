@@ -26,6 +26,7 @@ services:
       - odoo-web-data:/var/lib/odoo
       - ./addons:/mnt/extra-addons  # Para agregar addons personalizados
       - ./config:/etc/odoo  # Puedes almacenar configuraciones personalizadas aquí
+      - ./enterprise:/mnt/enterprise
     restart: always
 
 volumes:
